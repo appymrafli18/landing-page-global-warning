@@ -1,0 +1,351 @@
+/* RESET CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Navbar */
+
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  padding: 32px 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999999;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+ul.menu li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.logo a {
+  font-size: 24px;
+  line-height: 20px;
+}
+
+nav a:hover {
+  color: #454d7a;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom right, rgb(35, 167, 35), rgb(240, 240, 32));
+  position: relative;
+}
+
+.judul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  -webkit-transform: translate(-50%, -65%);
+  -moz-transform: translate(-50%, -65%);
+  -ms-transform: translate(-50%, -65%);
+  -o-transform: translate(-50%, -65%);
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.judul h1 {
+  margin-top: 40px;
+  font-size: 40px;
+  line-height: 70px;
+  color: white;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+
+.judul p {
+  font-size: 24px;
+  color: white;
+}
+
+.anggota {
+  position: absolute;
+  bottom: -80%;
+  width: 100%;
+  height: 200px;
+  padding: 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.anggota .anggota1 {
+  height: 100px;
+  border-bottom: 2px solid white;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.anggota1 p {
+  font-size: 20px;
+  color: white;
+}
+
+/* About */
+.about {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+}
+
+section .gambar {
+  display: flex;
+  justify-content: center;
+}
+
+section .gambar img {
+  background-position: center;
+  background-size: cover;
+  width: 99%;
+  height: 100%;
+  margin-top: 30px;
+}
+
+/* Card */
+section.services {
+  margin: 10px auto;
+  padding: 10px;
+  margin-bottom: 0;
+  background-color: #f9f9f9;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+section.services .desc {
+  display: inline-block;
+  line-height: 20px;
+  padding: 10px;
+  width: 80%;
+}
+
+section.services h2 {
+  text-align: center;
+  padding: 10px;
+  margin-top: 70px;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  color: #215276;
+}
+
+section.services .cardone {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+section.services .cardone .cardone-card {
+  padding: 10px;
+  text-align: center;
+}
+
+section.services .cardone .cardone-card p {
+  text-align: center;
+  padding: 5px;
+}
+
+/* Poster */
+
+.poster {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.poster .posterA {
+  text-align: center;
+  padding-top: 60px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: greenyellow;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4a4b79;
+}
